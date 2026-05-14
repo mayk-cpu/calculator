@@ -11,7 +11,9 @@
             }
             function addNumber(number) {
                 clickSound.currentTime = 0;
-                clickSound.play();
+                if (window.innerWidth > 768){
+                    clickSound.play();
+                }
                let display = document.getElementById("display");
                if (display.value.length >= 16) {
                 return;
