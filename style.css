@@ -45,7 +45,8 @@ body {
         border: none;
         border-radius: 10px;
         font-size: 22px;
-        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
         background-color: #f0f0f0;
         transition: background-color 0.15s;
     }
