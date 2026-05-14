@@ -54,7 +54,12 @@
                      let historyItem = document.createElement ("p");
                      historyItem.innerText = expression + " = " + result;
                      document.getElementById("history").appendChild(historyItem);
-                     localStorage.setItem("history", document.getElementById("history").innerHTML);
+                             let history = document.getElementByld("history");
+
+                     while (history.children.length > 11) {
+                        history.removeChild(history.children[1]);
+                     }
+                     localStorage.setItem("history", history.innerHTML);
                      
                 } catch {
                     let display = document.getElementById("display");
