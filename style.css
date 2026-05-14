@@ -47,7 +47,7 @@ body {
         font-size: 22px;
         cursor: pointer;
         background-color: #f0f0f0;
-        transition: 0.2s;
+        transition: background-color 0.15s;
     }
     @media (hover: hover) and (pointer: fine) {
         button:hover {
