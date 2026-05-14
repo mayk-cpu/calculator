@@ -49,11 +49,11 @@ body {
         background-color: #f0f0f0;
         transition: 0.2s;
     }
-    @media (hover: hover) {
+    @media (hover: hover) and (pointer: fine) {
         button:hover {
         background-color: #dcdcdc;
-        transform: scale(1.05);
-    }
+        transform: scale(1.03);
+        }
     }
     .buttons {
         display: grid;
@@ -73,7 +73,7 @@ body {
         color: white;
     }
     button:active {
-        transform: scale(0.95);
+        opacity: 0.8;
     }
     .zero {
         grid-column: span 2;
